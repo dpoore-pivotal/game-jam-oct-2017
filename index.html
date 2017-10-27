@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/dangerous.css">
+		<script type="text/javascript" src="js/phaser.min.js"></script>
+		<script type="text/javascript" src="js/dangerous.js"></script>
+
+		<title>Delete Dangerous</title>
+	</head>
+
+	<body>
+		<!-- default values for test -->
+		<header>
+			<div class="Logo"></div>
+			<h1>Delete Dangerous</h1>
+		</header>
+
+		<div id="hideMe">
+			<div class="InputForm">
+				<div class="InputForm__row">
+					<label for="InputForm__token">Tracker Token:</label>
+					<input type="text" id="InputForm__token" class="InputForm__token">
+				</div>
+				<div class="InputForm__row">
+					<label for="InputForm__projectId">Project Id:</label>
+					<input type="text" id="InputForm__projectId" class="InputForm__projectId">
+				</div>
+				<input type="submit" value="Get Dangerous" class="InputForm__submit" onClick="fetchProjectData();">
+			</div>
+		</div>
+
+		<div id='PhaserCanvas'></div>
+
+		<div class="Button">
+			<input type="submit" value="Delete Again?" id="Button__reset" class="Button__reset" onClick="window.location.reload();">
+		</div>
+	</body>
+
+</html>
